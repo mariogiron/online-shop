@@ -1,0 +1,72 @@
+@host = http://localhost:3000
+
+GET {{host}}/api/products
+
+###
+POST {{host}}/api/products
+Content-Type: application/json
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c3VhcmlvX2lkIjoiNjcyMDllYmZmMmUxYjVhMmVlMTRiZTlmIiwidXN1YXJpb19yb2xlIjoicmVndWxhciIsImlhdCI6MTczMDE5MTA0M30.Q_6oAJdKeSsbaHpFuabqZxSAreddOEgLoK3-LMSEZ_M
+
+{
+    "name": "Thermomix",
+    "description": "Hace muchas cosas",
+    "department": "hogar",
+    "price": 999,
+    "stock": 4,
+    "available": true
+}
+
+###
+PUT {{host}}/api/products/671f58339122b5f51351112a
+Content-Type: application/json
+
+{
+    "stock": 20
+}
+
+###
+DELETE {{host}}/api/products/671f965e697fd0f7a95cb557
+
+###
+GET {{host}}/api/products/671b89453c3445b535fd408d
+
+###
+GET {{host}}/api/products/dpt/moda
+
+###
+GET {{host}}/api/products/available
+
+###
+GET {{host}}/api/products/price?min=100&max=200
+
+
+
+
+
+
+###
+POST {{host}}/api/users/register
+Content-Type: application/json
+
+{
+    "username": "laura",
+    "email": "laura@gmail.com",
+    "password": "12345"
+}
+
+###
+POST {{host}}/api/users/login
+Content-Type: application/json
+
+{
+    "email": "laura@gmail.com",
+    "password": "12345"
+}
+
+###
+PUT {{host}}/api/users/add/671f6f8b2bede92b1af1a3a2
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c3VhcmlvX2lkIjoiNjcyMDllYmZmMmUxYjVhMmVlMTRiZTlmIiwidXN1YXJpb19yb2xlIjoicmVndWxhciIsImlhdCI6MTczMDE5MjI3MH0.wTLf73f60VdEEqw5EEZs1VspLRaE0W8wPtoPBIBdLzA
+
+###
+GET {{host}}/api/users/profile
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c3VhcmlvX2lkIjoiNjcyMDllYmZmMmUxYjVhMmVlMTRiZTlmIiwidXN1YXJpb19yb2xlIjoicmVndWxhciIsImlhdCI6MTczMDE5MjI3MH0.wTLf73f60VdEEqw5EEZs1VspLRaE0W8wPtoPBIBdLzA
