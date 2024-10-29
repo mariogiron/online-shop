@@ -1,11 +1,11 @@
-@host = http://localhost:3000
+@host = https://online-shop-90dp.onrender.com
 
 GET {{host}}/api/products
 
 ###
 POST {{host}}/api/products
 Content-Type: application/json
-Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c3VhcmlvX2lkIjoiNjcyMDllYmZmMmUxYjVhMmVlMTRiZTlmIiwidXN1YXJpb19yb2xlIjoicmVndWxhciIsImlhdCI6MTczMDE5MTA0M30.Q_6oAJdKeSsbaHpFuabqZxSAreddOEgLoK3-LMSEZ_M
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c3VhcmlvX2lkIjoiNjcyMGM0Zjk1Zjc3YjRjMjA5MGQyZGI5IiwidXN1YXJpb19yb2xlIjoicmVndWxhciIsImlhdCI6MTczMDIwMDg2NX0.CBPubFKcG2ijgBrrlc_WtL3ldQ9ETPk_mHEn4jfZmIA
 
 {
     "name": "Thermomix",

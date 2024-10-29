@@ -33,7 +33,7 @@ const login = async (req, res) => {
     }
 
     res.json({
-        message: 'Login correcto',
+        message: '¡¡Login correcto!! 🥳',
         token: createToken(user)
     });
 }
